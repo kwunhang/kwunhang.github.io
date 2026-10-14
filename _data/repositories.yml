@@ -1,14 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - kwunhang
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - kwunhang/UDG
+  - kwunhang/CatRAG
+  - kwunhang/TA-RAG
+  - kwunhang/pgvector
+  - kwunhang/COMP6211J-Course-Report
+  - kwunhang/Federated-Learning
+  - kwunhang/CSCI3100_GrpA2_Teddit

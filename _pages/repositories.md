@@ -2,14 +2,17 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Selected research code and software projects from my GitHub repositories.
 nav: true
 nav_order: 4
+show_github_profile: false
 ---
 
-{% if site.data.repositories.github_users %}
+Code for my research and software projects. Browse all my public repositories on [GitHub](https://github.com/kwunhang?tab=repositories).
 
-## GitHub users
+{% if page.show_github_profile and site.data.repositories.github_users %}
+
+## GitHub Profile
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for user in site.data.repositories.github_users %}
@@ -38,6 +41,8 @@ nav_order: 4
 {% if site.data.repositories.github_repos %}
 
 ## GitHub Repositories
+
+My PGVector Custom Implementation builds on [pgvector](https://github.com/pgvector/pgvector), and my Federated-Learning-Analysis project builds on [pFedMe](https://github.com/CharlieDinh/pFedMe).
 
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
   {% for repo in site.data.repositories.github_repos %}
