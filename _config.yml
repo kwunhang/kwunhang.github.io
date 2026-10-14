@@ -100,7 +100,7 @@ navbar_fixed: true
 footer_fixed: true
 search_enabled: true
 socials_in_search: true
-posts_in_search: true
+posts_in_search: false
 bib_search: true
 
 # Dimensions
@@ -144,7 +144,7 @@ lsi: false # produce an index for related posts
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
   enabled: true
@@ -174,17 +174,19 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 # Optional: Set default categories and tags for posts from each source.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
-    categories: [external-posts]
-    tags: [medium]
-  - name: Google Blog
-    posts:
-      - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
-        published_date: 2024-05-14
-    categories: [external-posts]
-    tags: [google]
+# Keep external imports disabled until the blog contains personal content.
+external_sources: []
+# Template examples for future reference:
+# - name: medium.com
+#   rss_url: https://medium.com/@al-folio/feed
+#   categories: [external-posts]
+#   tags: [medium]
+# - name: Google Blog
+#   posts:
+#     - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
+#       published_date: 2024-05-14
+#   categories: [external-posts]
+#   tags: [google]
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -200,16 +202,12 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  books:
-    output: true
   news:
     defaults:
       layout: post
     output: true
   projects:
-    output: true
-  teachings:
-    output: true
+    output: false
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -231,6 +229,11 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
+  # Keep demo posts and projects locally without publishing their content.
+  # Remove these two entries after replacing the demo content to publish it.
+  # The Blog and Projects landing pages also need published: true and nav: true.
+  - _posts/
+  - _projects/
   - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
@@ -245,7 +248,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/
@@ -341,7 +343,7 @@ terser:
 
 jekyll-archives:
   posts:
-    enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
+    enabled: [] # restore [year, tags, categories] when publishing the blog.
     permalinks:
       year: "/blog/:year/"
       tags: "/blog/:type/:name/"
@@ -357,8 +359,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Lau]
+  first_name: [Kwun Hang]
 
   style: apa
   locale: en
@@ -421,7 +423,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit: # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
