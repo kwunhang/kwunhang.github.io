@@ -4,11 +4,14 @@ set -euo pipefail
 tmp_dir="$(mktemp -d)"
 tmp_override="${tmp_dir}/comments-test-override.yml"
 tmp_site="${tmp_dir}/site"
+demo_override="${tmp_dir}/demo-posts.yml"
 
 cleanup() {
   rm -rf "${tmp_dir}"
 }
 trap cleanup EXIT
+
+ruby test/demo_posts_config.rb >"${demo_override}"
 
 cat >"${tmp_override}" <<'YAML'
 giscus:
@@ -18,7 +21,7 @@ giscus:
   category_id: DIC_kwDOExample
 YAML
 
-bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
+bundle exec jekyll build --config "_config.yml,${demo_override},${tmp_override}" -d "${tmp_site}" >/dev/null
 
 giscus_page="${tmp_site}/blog/2022/giscus-comments/index.html"
 disqus_page="${tmp_site}/blog/2015/disqus-comments/index.html"

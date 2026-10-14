@@ -234,6 +234,9 @@ exclude:
   # The Blog and Projects landing pages also need published: true and nav: true.
   - _posts/
   - _projects/
+  - test/
+  - test-results/
+  - playwright-report/
   - AGENTS.md
   - al-folio-upgrade-report.md
   - bin/
