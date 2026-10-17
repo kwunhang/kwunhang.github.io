@@ -21,7 +21,7 @@ icon: climbing-favicon-32x32.png # the emoji used as the favicon (alternatively,
 apple_touch_icon: climbing-touch-icon-180x180.png # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.
 
 url: https://kwunhang.github.io # the base hostname & protocol for your site
-baseurl: /my-site # the subpath of your site, e.g. /blog/. Leave blank for root
+baseurl: / # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
@@ -205,7 +205,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
     output: false
 
@@ -229,9 +229,12 @@ kramdown:
 # Includes & excludes
 include: ["_pages"]
 exclude:
-  # Keep demo posts and projects locally without publishing their content.
-  # Remove these two entries after replacing the demo content to publish it.
+  # Keep demo news, posts and projects locally without publishing their content.
+  # Remove the relevant entry after replacing its demo content to publish it.
+  # News also needs output: true above and published: true in _pages/news.md.
+  # Enable announcements in _pages/about.md to show news on the homepage.
   # The Blog and Projects landing pages also need published: true and nav: true.
+  - _news/
   - _posts/
   - _projects/
   - test/

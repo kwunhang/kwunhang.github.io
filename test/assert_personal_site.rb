@@ -15,7 +15,7 @@ abort "404 page is missing" unless File.file?(File.join(site, "404.html"))
 home = Nokogiri::HTML(File.read(File.join(site, "index.html")))
 publications = Nokogiri::HTML(File.read(File.join(site, "publications/index.html")))
 nav = home.css(".navbar-nav a.nav-link").map { |link| link["href"] }
-expected_nav = ["#{baseurl}/", "#{baseurl}/publications/", "#{baseurl}/repositories/"]
+expected_nav = ["#{baseurl}/", "#{baseurl}/publications/", "#{baseurl}/experiences/", "#{baseurl}/repositories/"]
 abort "Unexpected navigation: #{nav.inspect}" unless nav == expected_nav
 
 papers = BibTeX.parse(File.read("_bibliography/papers.bib").sub(/\A---\n---\n/, "")).entries.values

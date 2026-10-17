@@ -1,0 +1,41 @@
+---
+---
+
+@charset "utf-8";
+
+// Keep the gem's styles and configure its accent tokens for this personal site.
+// The upstream light-mode accent token is named $purple-color.
+@use "variables" as v with (
+  $max-content-width: {{site.max_width | default: "930px"}},
+  $purple-color: #006ba0,
+  $cyan-color: #53b9e8
+);
+
+@use "themes";
+@use "layout";
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+:root {
+  --global-hover-color: #00578a;
+}
+
+html[data-theme="dark"] {
+  // Dark labels remain readable on the lighter blue used for dark-mode buttons.
+  --global-hover-text-color: #{v.$grey-color-dark};
+}
+
+// The theme marks the site owner's name with a direct <em> inside the author list.
+.publications ol.bibliography li .author > em {
+  border-bottom: 0;
+  font-style: normal;
+  font-weight: 700;
+}

@@ -4,7 +4,7 @@ test("navigation shows only the personal site's public sections", async ({ page,
   await page.goto("./", { waitUntil: "domcontentloaded" });
   const links = page.locator(".navbar-nav a.nav-link");
   const labels = (await links.allTextContents()).map((label) => label.replace("(current)", "").trim());
-  expect(labels).toEqual(["About", "Publications", "Repositories"]);
+  expect(labels).toEqual(["About", "Publications", "Experiences", "Repositories"]);
   const toggle = page.locator(".navbar-toggler");
   if (await toggle.isVisible()) await toggle.click();
   await page.getByRole("link", { name: "Publications", exact: true }).first().click();

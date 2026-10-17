@@ -1,0 +1,44 @@
+- id: huawei
+  role: Research Intern
+  company: Huawei Tech. Investment Co. Limited
+  start: "2025-07"
+  end: "2026-01"
+  location: Hong Kong
+  highlights:
+    - Researched a RAG framework for multi-hop retrieval and optimized retrieval strategies to improve performance and accuracy.
+    - Integrated RAG methods into an industrial database system using C++.
+  technologies: [Python, C++]
+
+- id: hkust
+  role: Junior Research Assistant
+  company: HKUST JC STEM Lab of Data Science Foundations
+  start: "2024-06"
+  end: "2024-07"
+  location: Hong Kong
+  highlights:
+    - Built a knowledge-based Q&A application using LangChain and Streamlit.
+    - Optimized the RAG system, improving retrieval accuracy by **23%**.
+  technologies: [Python, LangChain, Streamlit, Milvus, Faiss]
+
+- id: wee-creation
+  role: Software Developer Trainee
+  company: Wee Creation Company Limited
+  start: "2023-01"
+  end: "2024-05"
+  location: Hong Kong
+  employment: Part-time
+  highlights:
+    - Implemented **15+ APIs** using PHP and CodeIgniter, and contributed to an online shopping application using React.
+    - Added **10+ features** to a member app using React Native.
+  technologies: [PHP, JavaScript, React, React Native, jQuery, HTML, SQL]
+
+- id: optix
+  role: AI Software Engineer Intern
+  company: Optix Solutions Limited
+  start: "2022-06"
+  end: "2022-08"
+  location: Hong Kong
+  highlights:
+    - Built an AI module for MTR Corporation's NLP project, improving the module's accuracy by **16%**.
+    - Developed a phone-number recognition module for a form-recognition tool, achieving **over 95% accuracy**.
+  technologies: [Python, OpenCV, scikit-learn, pandas, NumPy]
