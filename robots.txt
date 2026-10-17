@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://kwunhang.github.io/my-site/sitemap.xml
+Sitemap: https://kwunhang.github.io//sitemap.xml

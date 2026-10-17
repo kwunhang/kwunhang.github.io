@@ -1,0 +1,205 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Experiences | Lau Kwun Hang, Jimmy </title> <meta name="author" content="Kwun Hang Lau"> <meta name="description" content="Research, software development, and AI roles in Hong Kong."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/climbing-favicon-32x32.png?v=4345e794f3bd9a43dafa358fad232565"> <link rel="apple-touch-icon" href="/assets/img/climbing-touch-icon-180x180.png?v=d3fc2f5ee088b9456ef78abdf316e910"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://kwunhang.github.io/experiences/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="//"> Lau Kwun Hang, Jimmy </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">Publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/experiences/">Experiences <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">Repositories </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <style type="text/css">
+    .experience-list {
+  --experience-muted: color-mix(in srgb, var(--global-text-color) 72%, var(--global-bg-color));
+  margin: 2rem 0 0;
+  padding: 0 0 1rem;
+  list-style: none;
+}
+
+.experience-list .experience-item {
+  position: relative;
+  padding: 0 0 1.75rem 1.75rem;
+}
+
+.experience-list .experience-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 0.6875rem;
+  bottom: -0.6875rem;
+  left: calc(0.3125rem - 0.5px);
+  width: 1px;
+  background: var(--global-divider-color);
+}
+
+.experience-list .experience-item::after {
+  content: "";
+  position: absolute;
+  top: 0.375rem;
+  left: 0;
+  width: 0.625rem;
+  height: 0.625rem;
+  border: 2px solid var(--global-theme-color);
+  border-radius: 50%;
+  background: var(--global-bg-color);
+}
+
+.experience-list .experience-entry {
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.experience-list .experience-item:last-child,
+.experience-list .experience-item:last-child .experience-entry {
+  padding-bottom: 0;
+}
+
+.experience-list .experience-item:last-child .experience-entry {
+  border-bottom: 0;
+}
+
+.experience-list .experience-heading {
+  margin-bottom: 1rem;
+}
+
+.experience-list .experience-role {
+  margin: 0 0 0.3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.experience-list .experience-company {
+  margin: 0 0 0.45rem;
+  color: var(--global-theme-color);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.experience-list .experience-meta {
+  margin: 0;
+  color: var(--experience-muted);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.experience-list .experience-period {
+  margin: 0 0 0.4rem;
+  color: var(--experience-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.experience-list .experience-highlights {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding-left: 1.15rem;
+  list-style: disc;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+.experience-list .experience-highlights p {
+  margin: 0;
+}
+
+.experience-list .experience-highlights strong {
+  font-weight: 500;
+}
+
+@media print {
+  .experience-list .experience-item {
+    break-inside: avoid;
+  }
+}
+
+  </style> <div class="post"> <header class="post-header"> <h1 class="post-title">Experiences</h1> <p class="post-description">Research, software development, and AI roles in Hong Kong.</p> </header> <article> <ol class="experience-list" role="list" aria-label="Work experience, newest first"> <li class="experience-item"> <section class="experience-entry" aria-labelledby="experience-huawei"> <header class="experience-heading"> <p class="experience-period"> <time datetime="2025-07">Jul 2025</time> – <time datetime="2026-01">Jan 2026</time> </p> <h2 class="experience-role" id="experience-huawei">Research Intern</h2> <p class="experience-company">Huawei Tech. Investment Co. Limited</p> <p class="experience-meta"> Hong Kong </p> </header> <ul class="experience-highlights"> <li> <p>Researched a RAG framework for multi-hop retrieval and optimized retrieval strategies to improve performance and accuracy.</p> </li> <li> <p>Integrated RAG methods into an industrial database system using C++.</p> </li> </ul> </section> </li> <li class="experience-item"> <section class="experience-entry" aria-labelledby="experience-hkust"> <header class="experience-heading"> <p class="experience-period"> <time datetime="2024-06">Jun 2024</time> – <time datetime="2024-07">Jul 2024</time> </p> <h2 class="experience-role" id="experience-hkust">Junior Research Assistant</h2> <p class="experience-company">HKUST JC STEM Lab of Data Science Foundations</p> <p class="experience-meta"> Hong Kong </p> </header> <ul class="experience-highlights"> <li> <p>Built a knowledge-based Q&amp;A application using LangChain and Streamlit.</p> </li> <li> <p>Optimized the RAG system, improving retrieval accuracy by <strong>23%</strong>.</p> </li> </ul> </section> </li> <li class="experience-item"> <section class="experience-entry" aria-labelledby="experience-wee-creation"> <header class="experience-heading"> <p class="experience-period"> <time datetime="2023-01">Jan 2023</time> – <time datetime="2024-05">May 2024</time> </p> <h2 class="experience-role" id="experience-wee-creation">Software Developer Trainee</h2> <p class="experience-company">Wee Creation Company Limited</p> <p class="experience-meta"> Hong Kong · Part-time </p> </header> <ul class="experience-highlights"> <li> <p>Implemented <strong>15+ APIs</strong> using PHP and CodeIgniter, and contributed to an online shopping application using React.</p> </li> <li> <p>Added <strong>10+ features</strong> to a member app using React Native.</p> </li> </ul> </section> </li> <li class="experience-item"> <section class="experience-entry" aria-labelledby="experience-optix"> <header class="experience-heading"> <p class="experience-period"> <time datetime="2022-06">Jun 2022</time> – <time datetime="2022-08">Aug 2022</time> </p> <h2 class="experience-role" id="experience-optix">AI Software Engineer Intern</h2> <p class="experience-company">Optix Solutions Limited</p> <p class="experience-meta"> Hong Kong </p> </header> <ul class="experience-highlights"> <li> <p>Built an AI module for MTR Corporation’s NLP project, improving the module’s accuracy by <strong>16%</strong>.</p> </li> <li> <p>Developed a phone-number recognition module for a form-recognition tool, achieving <strong>over 95% accuracy</strong>.</p> </li> </ul> </section> </li> </ol> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Kwun Hang Lau. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="//assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="//assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="//assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="//assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "Publications",
+          description: "My research on vector search, retrieval-augmented generation, and embedding models.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-experiences",
+          title: "Experiences",
+          description: "Research, software development, and AI roles in Hong Kong.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/experiences/";
+          },
+        },{id: "nav-repositories",
+          title: "Repositories",
+          description: "Selected research code and software projects from my GitHub repositories.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/jimmylau5773", "_blank");
+        },
+      },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%6A%69%6D%6D%79%6C%61%75%6B%68@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/kwunhang", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="//assets/al_search/js/shortcut-key.js"></script> </body> </html>
